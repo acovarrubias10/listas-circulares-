@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Central de rutas</h1>
+
+    <div>
+        <h1 class="Titulo"> Bases</h1>
+            <div>
+                <label for="nombre">Nombre de la base:</label>
+                <input type="text" id="nombre" placeholder="Nombre">
+            </div>
+            <div>
+                <label for="minutos">Tiempo en minutos:</label>
+                <input type="text" id="minutos" placeholder="Minutos">
+            </div>
+            <div>
+                <label>Posición (opcional):</label>
+                <input type="text" id="posicion">
+            </div>
+
+            <button id="agregar" class="btn btn-primary">Agregar</button>
+            <button id="buscar" class="btn btn-primary">Buscar</button>
+            <button id="eliminar" class="btn btn-primary">Eliminar</button>
+
+            <button id="insertar" class="btn btn-primary">Insertar</button>
+        <div id="mensaje1">
+        </div>
+    </div>
+    <div>
+        <h1 class="Titulo"> Tarjeta de trabajo</h1>
+        <form id="formulario2" action="#">
+            <div>
+                <label for="baseInicio">Base a iniciar:</label>
+                <input type="text" id="baseinicio">
+            </div>
+            <div>
+                <label for="horainicio">Horario de inicio:</label>
+                <input type="time" id="horainicio">
+            </div>
+            <div>
+                <label for="horafin">Horario finalizar:</label>
+                <input type="time" id="horafin">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Obtener Tarjeta de trabajo</button>
+        </form>
+        <div id="mensaje2">
+        </div>
+    </div>
+</body>
+<script src="main.js" type="module"></script>
+</html>
